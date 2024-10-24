@@ -4,10 +4,65 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <link href="./src/styles/output.css" rel="stylesheet" />
+    <link href="./src/styles/main.css" rel="stylesheet" />
+    <title>FutureIQ</title>
   </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
+  <body class="bg-black-charcoal">
+    <header
+      class="mx-auto flex max-w-[1300px] flex-col gap-[4.25rem] pb-[4.625rem] pe-4 ps-4 pt-[1.875rem] md:gap-[8.125rem] 2xl:gap-[10rem]"
+    >
+      <nav class="flex justify-between">
+        <img class="" src="/src/assets/logos/logo-future-iq.svg" alt="" />
+
+        <img src="/src/assets/icons/icon-nav-menu.svg" alt="" />
+      </nav>
+
+      <div class="gap-13 flex flex-col items-center">
+        <section class="flex flex-col items-center gap-6 text-center">
+          <h1
+            class="max-w-[53rem] text-2xl font-semibold text-white sm:text-5xl 2xl:text-8xl"
+          >
+            Why Are You Still Doing
+            <span class="text-primary-vivid">Everything</span> on Your Own?
+          </h1>
+
+          <p
+            class="font-lato-serif max-w-[27rem] pb-6 text-sm leading-loose text-white/70 md:text-base 2xl:text-xl"
+          >
+            Feeling <span class="text-primary-vivid">overworked?</span> Imagine
+            growing your business faster—without the
+            <span class="text-primary-vivid">stress, huge team,</span> and
+            <span class="text-primary-vivid">wasted time</span>.
+            <span class="text-primary-vivid">
+              You don’t have to do this alone anymore.
+            </span>
+          </p>
+
+          <a
+            class="shadow-inset-white backdrop-blur-2 pe-13 ps-13 rounded-xl bg-primary-vivid pb-3 pt-3 text-center font-medium outline outline-[.1875rem] outline-primary-vivid/30 md:pb-3.5 md:pt-3.5"
+            href="/"
+            >I'm Ready to Apply</a
+          >
+        </section>
+
+        <div class="flex items-center gap-3">
+          <div class="flex flex-col gap-2 leading-normal">
+            <p class="text-3xl font-bold text-primary-vivid">$750</p>
+            <h3 class="text-sm">Investment</h3>
+          </div>
+
+          <span class="separator h-16 w-[2px] bg-white"></span>
+
+          <section class="">
+            <h3 class="text-xs font-bold">Payment Plan Available</h3>
+            <p class="text-xs">50% upfront</p>
+            <p class="text-xs">50% after 15 days</p>
+          </section>
+        </div>
+      </div>
+    </header>
+
+    <script type="module" src="/src/scripts/main.js"></script>
   </body>
 </html>

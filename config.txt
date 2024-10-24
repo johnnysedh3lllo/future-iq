@@ -1,0 +1,97 @@
+/** @type {import('tailwindcss').Config} */
+const colors = require('tailwindcss/colors');
+
+export default {
+  content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
+  theme: {
+    borderRadius: {
+      none: '0px',
+      xsm: '0.75rem',
+      base: '1rem',
+      sm: '1.25rem',
+      DEFAULT: '1.5rem',
+      md: '2rem',
+      lg: '3.5rem',
+      full: '100%',
+    },
+    borderWidth: {
+      DEFAULT: '1px',
+      0: '0px',
+      2: '2px',
+      4: '4px',
+    },
+    fontFamily: {
+      sans: ['Red Hat Display', 'sans-serif'],
+    },
+    fontSize: {
+      xs: '0.75rem',
+      sm: '0.875rem',
+      base: '1rem',
+      lg: '1.125rem',
+      xl: '1.25rem',
+      '2xl': '1.5rem',
+      '2.5xl': '1.625rem',
+      '3xl': '1.75rem',
+      '4xl': '2rem',
+      '5xl': '2.5rem',
+      '6xl': '3rem',
+      '7xl': '3.5rem',
+      '8xl': '4rem',
+    },
+    fontWeight: {
+      regular: '400',
+      medium: '500',
+      semibold: '600',
+      bold: '700',
+      extrabold: '800',
+    },
+    letterSpacing: {
+      normal: '0.1875rem',
+    },
+    lineHeight: {
+      tight: '1',
+      snug: '1.1',
+      normal: '1.2',
+      relaxed: '1.4',
+    },
+    extend: {
+      boxShadow: {
+        custom: '14px 30px 44px rgba(0, 0, 0, 0.25)',
+      },
+      colors: {
+        transparent: colors.transparent,
+        white: {
+          DEFAULT: colors.white,
+          smoke: '#f3f3f3',
+        },
+        gray: {
+          platinum: '#e7e7e8',
+          battleship: '#88898c',
+        },
+        black: {
+          DEFAULT: colors.black,
+          raisin: '#242527',
+          gray: 'rgba(136, 137, 140, 0.05)',
+        },
+        blue: '#0062fd',
+        calendly: '#006bff',
+        emerald: '#01d68b',
+        googlemeet: '#5f6368',
+      },
+      screens: {
+        xxsm: '319px',
+        base: '375px',
+        xsm: '424px',
+        '2xl': '1438px',
+      },
+      spacing: {
+        18: '4.5rem',
+        25: '6.25rem',
+        30: '7.5rem',
+        33.5: '8.375rem',
+        half: '50%',
+      },
+    },
+  },
+  plugins: [require('@tailwindcss/typography')],
+};
