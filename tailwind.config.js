@@ -59,7 +59,7 @@ module.exports = {
           'off-white': 'hsl(240, 17%, 96%)', // #F1F2F5
         },
         black: {
-          DEFAULT: 'hsl(0, 0%, 0%)', // #000000
+          DEFAULT: colors.black, // #000000
           charcoal: 'hsl(0, 0%, 12%)', // #1E1E1E
           midnight: 'hsl(228, 8%, 6%)', // #0D0E11
         },
