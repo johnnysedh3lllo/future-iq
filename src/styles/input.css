@@ -1,4 +1,4 @@
-@tailwind base;
+5@tailwind base;
 @tailwind components;
 @tailwind utilities;
 
@@ -56,6 +56,6 @@
   }
 }
 
-body {
+.body {
   @apply font-montserrat-serif bg-black-charcoal min-h-screen text-white;
 }
