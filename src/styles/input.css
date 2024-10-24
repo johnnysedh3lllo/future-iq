@@ -57,5 +57,5 @@
 }
 
 body {
-  @apply font-montserrat-serif text-white;
+  @apply font-montserrat-serif min-h-screen text-white;
 }
